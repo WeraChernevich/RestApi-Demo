@@ -1,0 +1,10 @@
+version: 27.1.1
+services:
+  db_rest-api:
+    container_name: l911140251_ra
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=vera
+      - POSTGRES_USER=admin
+    image: postgres:14.13
